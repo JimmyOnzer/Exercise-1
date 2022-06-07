@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>
+Race Registration!
+</title>
+</head>
+<style>
+ body{
+    
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-color: lightgreen;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height:100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+button{
+
+    background-color: #fff;
+	border: none;
+	color: #aaa;
+	curse: pointer;
+	font-size: 16px;
+	padding: 15px;
+	}
+
+button:hover{
+color: #222;
+}
+
+button:focus{
+outline: none;
+}
+
+.slider-container .action-buttons button{
+position: absolute;
+left: 35%;
+top: 50%;
+z-index: 100;
+}
+
+.slider-container .action-buttons  .down-button {
+transform: translateY(-100%);
+border-top-left-radius: 5px;
+border-butto-left-radius: 5px;
+}
+
+.slider-container .action-buttons .up-button{
+transform: translateY(-100%);
+border-top-left-radius: 5px;
+border-butto-left-radius: 5px;
+}
+
+</style>
+
+<body style="background-color; #090; font-family:verdana; margin:0">
+
+<div style="width:100%; 100px; background-color: black; color: white">
+<h1 style="font-family:comic sans MS;">Race Registration!</h1>
+</div>
+
+<br />
+<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+<fieldset>
+<legend>Enter you name:</legend>
+<p><label>First Name:<input type="text" name="fname" required></label></p>
+<p><label>Second Name:<input type="text" name="sname" required></label></p>
+ </fieldset>
+ 
+<fieldset>
+<legend>Select a race:</legend> 
+<div class="form-group">
+      
+     <div class="col-lg-3">
+        <div class="radio">
+          <label>
+            <input name="optionsRadios" id="optionsRadios1" value="Fun" checked="" type="radio">
+            Fun Run 5k
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="optionsRadios" id="optionsRadios2" value="Half" type="radio">
+            Half Marathon
+          </label>
+        </div>
+		<div class="radio">
+          <label>
+            <input name="optionsRadios" id="optionsRadios2" value="Full" type="radio">
+            Full Marathon
+          </label>
+        </div>
+      </div>
+ </fieldset>   
+
+<fieldset>
+<legend>Select age group:</legend> 
+			<select class="form-control" id="country">
+		    <option class="dropdown-item">under 18</option>
+			<option class="dropdown-item">between 18 to 35</option>
+			<option class="dropdown-item">between 35 to 60</option>
+			<option class="dropdown-item">over 60</option>
+		</select>
+</fieldset>
+
+<fieldset>
+<legend>Login details:</legend> 
+<p><label>Email address:<input type="email" name="email" required></label></p>
+<p><label>Password:<input type="password" name="password" required></label></p>
+</fieldset>
+
+							
+<button align: center; type="button" class="btn btn-primary" onclick="register()">Register</button>
+
+</form
+
+<div  style="background-color:white" align="center" id="footer">
+ 
+  &copy; <? echo date("y"); ?> All rights reserved. Olwethu Matiwane, Inc.</a>
+ </div>
+
+<!-- End Footer -->
+<HR />
+</body>
+</html>
